@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import type { ValidationStatus } from '~/types/wordle'
+import { WORD_SIZE, type ValidationStatus } from '~/types/wordle'
 
 
 interface WordState {
@@ -10,8 +10,6 @@ interface WordState {
   handleSubmit: () => Promise<void>
   reset: () => void
 }
-
-const WORD_SIZE = 5
 
 const initialState = {
   word: Array(WORD_SIZE).fill(''),

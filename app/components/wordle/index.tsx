@@ -1,7 +1,6 @@
 import { AppKeyboard } from "./app-keyboard"
 import { WordInput } from "./app-word-input"
-
-const WORD_SIZE = 5;
+import { WORD_SIZE } from "~/types/wordle"
 
 export const Wordle = () => {
   return (
