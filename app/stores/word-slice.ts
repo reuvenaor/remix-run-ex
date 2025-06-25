@@ -1,6 +1,6 @@
 import { create } from 'zustand'
+import type { ValidationStatus } from '~/types/wordle'
 
-type ValidationStatus = 'idle' | 'valid' | 'invalid'
 
 interface WordState {
   word: string[]

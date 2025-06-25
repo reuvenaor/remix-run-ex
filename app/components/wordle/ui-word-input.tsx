@@ -1,13 +1,14 @@
 import { memo, useMemo } from 'react'
 import { cn } from '~/lib/utils'
+import type { ValidationStatus } from '~/types/wordle'
 
 export interface WordInputProps {
   word: string[]
   size?: number
-  status?: 'idle' | 'valid' | 'invalid'
+  status?: ValidationStatus
 }
 
-function PureWordInputUI({ word, size = 5, status = 'idle' }: WordInputProps) {
+function PureWordInputUI({ word, size = 5, status = 'idle' as ValidationStatus }: WordInputProps) {
   const squares = useMemo(() => Array(size).fill(null), [size])
 
   const statusClasses = {
