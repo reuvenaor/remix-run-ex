@@ -1,18 +1,33 @@
-# Welcome to React Router!
+# Sentrycs Exercise FED
 
-A modern, production-ready template for building full-stack React applications using React Router.
+**Issuer: Reuven Naor**
+**Date: 25/06/2025**
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Exercise Description:
 
-## Features
+This exercise involves two main parts. First, you'll implement a custom event listener class based on a provided template, ensuring it can register, remove, and emit events. Second, you will use this event listener to build a Wordle-like game in React, where users can input letters, delete them, and submit a word for validation against a dictionary API. The UI should provide feedback on the word's validity by changing the border colors of the input squares.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Exercise Solution:
+
+- Part 1: Custom Event Listener
+- Part 2: Create Event Hook
+- Part 3: Connect to Zustand Store
+- Part 4: Create Wordle Game UI
+- Part 5: Connect UI and Logic
+
+## Not Included:
+- Loading UI
+- Better API handling and caching - use react-query or similar
+- Unit Tests
+- Monitoring and Logging
+
+## Tech Stack
+
+- React Router
+- Zustand Store
+- TailwindCSS
+- Shadcn UI
+- Vite
 
 ## Getting Started
 
@@ -63,25 +78,3 @@ The containerized application can be deployed to any platform that supports Dock
 - Digital Ocean App Platform
 - Fly.io
 - Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.

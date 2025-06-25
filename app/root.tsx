@@ -1,3 +1,5 @@
+// Issuer: Reuven Naor
+
 import {
   isRouteErrorResponse,
   Links,
