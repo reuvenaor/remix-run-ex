@@ -69,7 +69,6 @@ function KeyboardFirstRowUI({ onKeyPress }: Pick<KeyboardProps, 'onKeyPress'>) {
 
 
 function PureKeyboardUI({ onKeyPress, onSubmit, onDelete }: KeyboardProps) {
-  console.log('Keyboard UI rendered')
   return (
     <div className="w-full max-w-4xl mx-auto p-2 md:p-4 bg-gray-100 dark:bg-gray-900 rounded-xl shadow-lg">
       <div className="space-y-1 md:space-y-2">

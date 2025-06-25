@@ -10,8 +10,6 @@ export interface WordInputProps {
 function PureWordInputUI({ word, size = 5, status = 'idle' }: WordInputProps) {
   const squares = useMemo(() => Array(size).fill(null), [size])
 
-  console.log('WordInput rendered', word, status)
-
   const statusClasses = {
     idle: 'border-gray-300 dark:border-gray-600',
     valid: 'border-green-500',

@@ -26,8 +26,6 @@ export function useActionListener(
     if (!state.current) state.current = new Map()
     if (!actionListener.current) actionListener.current = new MyActionListener(state.current)
 
-    console.log('Event Listener created')
-
     return () => {
       if (!state.current || !actionListener.current) return;
       for (const [action, _listeners] of state.current) {
@@ -36,7 +34,6 @@ export function useActionListener(
       state.current.clear();
       state.current = null;
       actionListener.current = null;
-      console.log('Event Listener destroyed')
     }
   }, [])
 
