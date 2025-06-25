@@ -1,6 +1,6 @@
 import { create } from 'zustand'
+import type { ValidationStatus } from '~/types/wordle'
 
-type ValidationStatus = 'idle' | 'valid' | 'invalid'
 
 interface WordState {
   word: string[]
@@ -16,6 +16,13 @@ const WORD_SIZE = 5
 const initialState = {
   word: Array(WORD_SIZE).fill(''),
   validationStatus: 'idle' as ValidationStatus,
+}
+
+const validateWord = async (word: string): Promise<boolean> => {
+  const response = await fetch(
+    `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`,
+  )
+  return response.ok
 }
 
 export const useWordStore = create<WordState>((set, get) => ({
@@ -50,10 +57,8 @@ export const useWordStore = create<WordState>((set, get) => ({
 
     const wordToCheck = word.join('')
     try {
-      const response = await fetch(
-        `https://api.dictionaryapi.dev/api/v2/entries/en/${wordToCheck}`,
-      )
-      if (response.ok) {
+      const isValid = await validateWord(wordToCheck)
+      if (isValid) {
         set({ validationStatus: 'valid' })
       } else {
         set({ validationStatus: 'invalid' })

@@ -5,7 +5,7 @@
 
 ## Exercise Description:
 
-This exercise involves two main parts. First, you'll implement a custom event listener class based on a provided template, ensuring it can register, remove, and emit events. Second, you will use this event listener to build a Wordle-like game in React, where users can input letters, delete them, and submit a word for validation against a dictionary API. The UI should provide feedback on the word's validity by changing the border colors of the input squares.
+This exercise involves two main parts. First, you'll implement a custom event listener class based on a provided template, ensuring it can register, remove, and emit events. Second, you will use this event listener to build a Wordle-like game in React, where users can input letters, delete them, and submit a word for validation against a dictionary. The UI should provide feedback on the word's validity by changing the border colors of the input squares.
 
 ## Exercise Solution:
 
@@ -14,6 +14,7 @@ This exercise involves two main parts. First, you'll implement a custom event li
 - Part 3: Connect to Zustand Store
 - Part 4: Create Wordle Game UI
 - Part 5: Connect UI and Logic
+- Part 6: Add Dictionary API Validation (optional)
 
 ## Not Included:
 - Loading UI
