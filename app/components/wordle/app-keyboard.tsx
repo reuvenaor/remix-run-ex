@@ -1,5 +1,5 @@
 import { useEffect, useCallback } from 'react'
-import { KeyboardUI } from '~/components/keyboard-ui'
+import { KeyboardUI } from '~/components/wordle/keyboard-ui'
 import { useActionListener } from '~/hooks/use-action-listener'
 import { useWordStore } from '~/stores/word-slice'
 

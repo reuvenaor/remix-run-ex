@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
-import { AppKeyboard } from "~/components/app-keyboard";
-import { WordInput } from "~/components/app-word-input";
+import { AppKeyboard } from "~/components/wordle/app-keyboard";
+import { WordInput } from "~/components/wordle/app-word-input";
 
 const WORD_SIZE = 5;
 
