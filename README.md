@@ -81,4 +81,4 @@ The containerized application can be deployed to any platform that supports Dock
 
 ## Screenshot
 
-![Project Screenshot](./screenshot.png)
+![Project Screenshot](./Screenshot.png)
