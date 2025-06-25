@@ -1,16 +1,32 @@
 # Sentrycs Exercise FED
 
 **Issuer: Reuven Naor**
+**Date: 25/06/2025**
 
 ## Exercise Description:
 
 This exercise involves two main parts. First, you'll implement a custom event listener class based on a provided template, ensuring it can register, remove, and emit events. Second, you will use this event listener to build a Wordle-like game in React, where users can input letters, delete them, and submit a word for validation against a dictionary API. The UI should provide feedback on the word's validity by changing the border colors of the input squares.
 
+## Exercise Solution:
+
+- Part 1: Custom Event Listener
+- Part 2: Create Event Hook
+- Part 3: Connect to Zustand Store
+- Part 4: Create Wordle Game UI
+- Part 5: Connect UI and Logic
+
+## Not Included:
+- Loading UI
+- Better API handling and caching - use react-query or similar
+- Unit Tests
+- Monitoring and Logging
+
 ## Tech Stack
 
 - React Router
-- Zustand
+- Zustand Store
 - TailwindCSS
+- Shadcn UI
 - Vite
 
 ## Getting Started
